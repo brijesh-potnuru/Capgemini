@@ -1,0 +1,109 @@
+Q1.
+
+import java.util.*;  
+
+public class Assignment4Q1
+{
+	public static void main(String[] args) {
+	    Scanner sc= new Scanner(System.in);
+        System.out.print("Enter first number");  
+        int a= sc.nextInt();  
+        System.out.print("Enter second number");  
+        int b= sc.nextInt();  
+	      try{
+         int output=a/b;
+         System.out.println ("Result: "+output);
+      }
+      catch(ArithmeticException e){
+         System.out.println ("You Shouldn't divide a number by zero");
+      }
+	}
+}
+
+Q2.
+
+import java.util.*;  
+
+public class Assignment4Q2{
+
+    public static int[] findTwoSum(int[] list, int sum) {
+        throw new UnsupportedOperationException("Waiting to be implemented.");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter first number");  
+        int a= sc.nextInt();  
+        System.out.print("Enter second number");  
+        int b= sc.nextInt(); 
+        int[] arr = findTwoSum(new int[] { a,b}, b);
+        if(arr != null) {
+            System.out.println(arr[0] + " " + arr[1]);
+        }
+    }
+
+}
+
+Q3.
+
+package exception
+
+import java.util.*;
+
+
+
+class withdrawing{
+	private int a = 5000;
+	public void withdraw(int b) throws InsufficientBalanceException,IllegalBankTransactionException{
+		if(b<0) {
+			throw new IllegalBankTransactionException("Should not be negative");
+		}
+		else if(b>a) {
+			throw new InsufficientBalanceException("should not more than balance");
+		}
+		System.out.println(b+" withdrawn");
+	}
+}
+
+public class Assignment4Q3 {
+
+	public static void main(String[] args) {
+		withdrawing amount = new withdrawing();
+		int b;
+		Scanner s = new Scanner(System.in);
+		b = s.nextInt();
+		try {
+			amount.withdraw(b);
+		} catch (IllegalBankTransactionException e) {
+			System.out.println(e);
+			e.printStackTrace();
+		} catch (InsufficientBalanceException e) {
+			System.out.println(e);
+			e.printStackTrace();
+		}
+	}
+
+}
+
+package exception
+
+public class InsufficientBalanceException extends Exception {
+
+	private static final long serialVersionUID = 1L;
+	public InsufficientBalanceException(String a)
+	{
+		super(a);
+	}
+}
+
+package exception;
+
+public class InsufficientBalanceException extends Exception {
+
+	private static final long serialVersionUID = 1L;
+	public InsufficientBalanceException(String s)
+	{
+		super(s);
+	}
+
+}
