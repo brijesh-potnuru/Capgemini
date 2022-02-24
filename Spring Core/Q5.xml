@@ -11,20 +11,20 @@
 
 	<bean id = "Customer1" class="Question5.Customer">
 		<property name="customerId" value = "123" />
-		<property name="customerName" value = "Nishant" />
-		<property name="customerContact" value = "9948652610" />
+		<property name="customerName" value = "Brijesh" />
+		<property name="customerContact" value = "7981622150" />
 	</bean>
 	
 	<bean id = "Customeradd" class="Question5.Address" >
-		<property name="street" value = "chipura"/>
-		<property name="city" value = "visakhapatnam"/>
+		<property name="street" value = "Vishaka A Colony"/>
+		<property name="city" value = "Srikakulam"/>
 		<property name="state" value = "Andhara Pradesh"/>
-		<property name="zip" value = "530001"/>
+		<property name="zip" value = "532001"/>
 		<property name="country" value = "India"/>
 	</bean>
 	
 	<bean id = "Customeradd1" class="Question5.Address" >
-		<property name="street" value = "--------chipuras"/>
+		<property name="street" value = "Kukatpally"/>
 		<property name="city" value = "hydrabad"/>
 		<property name="state" value = "Andhara Pradesh"/>
 		<property name="zip" value = "5300012"/>
@@ -34,17 +34,17 @@
 	  <context:annotation-config/>
 	
 <!-- 	<bean id= "Customer2" class = "Question5.Customer">
-		<constructor-arg name="customerId" value = "1234"/>
-		<constructor-arg name="customerName" value = "Nishant"/>
-		<constructor-arg name="customerContact" value = "9948652610"/>
+		<constructor-arg name="customerId" value = "2711"/>
+		<constructor-arg name="customerName" value = "Brijesh"/>
+		<constructor-arg name="customerContact" value = "7981622150"/>
 		<constructor-arg name="customerAddress" ref="Customeradd1"/>
 	</bean>
 	
 	<bean id = "Customeradd1" class="Question5.Address" >
-		<constructor-arg name="street" value = "chipura"/>
-		<constructor-arg name="city" value = "visakhapatnam"/>
+		<constructor-arg name="street" value = "Visakha A Colony"/>
+		<constructor-arg name="city" value = "Srikakulam"/>
 		<constructor-arg name="state" value = "Andhara Pradesh"/>
-		<constructor-arg name="zip" value = "530001"/>
+		<constructor-arg name="zip" value = "532001"/>
 		<constructor-arg name="country" value = "India"/>
 	</bean> -->
 </beans>

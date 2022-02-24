@@ -8,13 +8,13 @@
            http://www.springframework.org/schema/context/spring-context.xsd">
 	
 	<bean id = "P1" class="Question10.PeopleService">
-	<property name="Name" value="Jai"/>
-	<property name="Contact" value="9948652610"/>
+	<property name="Name" value="Lochan"/>
+	<property name="Contact" value="9440100422"/>
 	</bean>
 	
 	<bean id = "P2" class="Question10.PeopleService">
-	<property name="Name" value="Nishant"/>
-	<property name="Contact" value="6283539264"/>
+	<property name="Name" value="Brijesh"/>
+	<property name="Contact" value="7981622150"/>
 	</bean>
 	
 	<bean id = "peopledetails" class ="Question10.PeopleService"/>
